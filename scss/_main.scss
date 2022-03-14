@@ -1,0 +1,147 @@
+.main {
+    background-image: linear-gradient(to top left, rgba(199, 199, 199, 0.466), white);
+    background-color: ffff;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    h1 {
+        margin-top: 0.7rem;
+        line-height: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p {
+        margin-top: 0.7rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }    
+    background-color: ffff;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    .index__links {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        a {
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(255, 0, 0, 0.75));
+        }
+        .index__productos {
+            display: flex;
+            height: 40vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(../img/indeximages/productos.jpg);
+            background-size:cover;
+        }
+        .index__nosotros {
+            display: flex;
+            height: 40vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(../img/indeximages/nosotros.jpg);
+            background-size: cover;
+        }
+        .index__comoComprar {
+            display: flex;
+            height: 40vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(../img/indeximages/comocomprar.jpg);
+            background-size: cover;
+        }
+        .index__contacto {
+            display: flex;
+            height: 40vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(../img/indeximages/contacto.jpg);
+            background-size: cover;
+        }
+    }
+    .titulo__producto {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            a {
+                text-decoration: none;
+                color: red;
+                &:hover {
+                    text-decoration: underline;
+                    color: red;
+                    background-color: rgba(0, 0, 0, 0.055);
+                }
+            }
+        }
+    }
+    .productos__grilla {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .productos__contenedor {
+            display: flex;
+            width: 450px;
+            flex-direction: column;
+            background-color: rgb(177, 177, 177);
+            box-shadow: $sombra-roja-fina;
+            border-radius: 40px 0px;
+            overflow: hidden;
+            margin: 0.3vw;
+            .producto__titulo {
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+                font-size: 10px;
+                background-image: linear-gradient(to top, rgb(204, 2, 2), rgb(250, 7, 7));
+                padding: 0.2rem;
+            }
+            .producto__imagen {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: 1.5s;
+                    &:hover {
+                        transform: scale(130%);
+                    }
+                }
+            }
+            .producto__descripcion {
+                background-color: rgba(255, 255, 255, 0.664);
+                text-align: center;
+                font-style: italic;
+                padding: 5px;
+            }   
+        }
+    }
+}

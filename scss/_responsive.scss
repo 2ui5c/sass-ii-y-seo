@@ -1,0 +1,71 @@
+@media (max-width: 805px) {
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content auto min-content;
+        grid-row: sticky;
+    }
+
+    .nav {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 2px;
+        .navbar {
+            height: 45px;
+            justify-content: space-evenly;
+            border-radius: 20px 20px;
+            a {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .header {
+        position: relative;
+        padding: 2px;
+        .contenedorTitulo {
+            img {
+                width: 50px;
+                &:hover {
+                transform: scale(110%,110%);
+                }
+            }
+        }
+    }
+
+    .footer {
+        .formulario {
+            font-size: 11px;
+            fieldset {
+                width: 80vw;
+                border-radius: 20px 20px;
+                .footer__boton {
+                    background-color: black;
+                    width: 80%;
+                    border-radius: 10px 10px;
+                }
+            }
+        }
+        p {
+            font-size: 11px;
+        }
+    }
+    
+    .main {
+        padding-top: 0.5rem;
+        .index__links {
+            width: 90vw;
+        }
+        .productos__grilla {
+            gap: 10px;
+            .productos__contenedor {
+                border-radius: 20px 20px;
+            }
+        }
+    }
+}
